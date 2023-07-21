@@ -37,11 +37,11 @@ if user_gamemode == 2:
     while True:
         
      if User_Help == "l":
-        Lower_Guess = print(random.randint(0,User_Number))
+        Lower_Guess = print(random.randint(0,Computer_Guesses))
         User_Help = input("Type L for a lower guess or H for a higer guess or Y if the answer is correct ").lower()     
     
      if User_Help == "h":
-        Higher_Guess = print(random.randint(User_Number,100))
+        Higher_Guess = print(random.randint(Computer_Guesses,100))
         User_Help = input("Type L for a lower guess or H for a higer guess or Y if the answer is correct ").lower() 
     
      if User_Help == "y":
