@@ -11,17 +11,19 @@ if user_gamemode == 1:
     
     User_Guess = int(input("Enter a number from 1 to 100 "))
     
-    while User_Guess > Computer_Random:
-        print("The number chosen by the computer is lower")
-        User_Guess = int(input("Enter a number from 1 to 100 "))
+    while True:
+        if User_Guess > Computer_Random:
+         print("The number chosen by the computer is lower")
+         User_Guess = int(input("Enter a number from 1 to 100 "))
     
-    while User_Guess < Computer_Random:
+        if User_Guess < Computer_Random:
          print("The number chosen by the computer is higher")
          User_Guess = int(input("Enter a number from 1 to 100 "))
-   
-    if User_Guess == Computer_Random:
-        print("Congratulations, You guessed the right number")
-        
+        if User_Guess == Computer_Random:
+         print("Congratulations, You guessed the right number")
+         break
+    
+    
         
 #Computer Guesses Number   
 if user_gamemode == 2:

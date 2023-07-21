@@ -9,14 +9,16 @@ print("_________________________")
 User_Guess = int(input("Enter a number from 1 to 100 "))
 
 #Win Conditions
-while User_Guess > Computer_Random:
-    print("The number chosen by the computer is lower")
-    User_Guess = int(input("Enter a number from 1 to 100 "))
-while User_Guess < Computer_Random:
-    print("The number chosen by the computer is higher")
-    User_Guess = int(input("Enter a number from 1 to 100 "))
-if User_Guess == Computer_Random:
-    print("Congratulations, You guessed the right number")
+while True:
+    if User_Guess > Computer_Random:
+        print("The number chosen by the computer is lower")
+        User_Guess = int(input("Enter a number from 1 to 100 "))
+    
+    if User_Guess < Computer_Random:
+        print("The number chosen by the computer is higher")
+        User_Guess = int(input("Enter a number from 1 to 100 "))
+    if User_Guess == Computer_Random:
+        print("Congratulations, You guessed the right number")
     
     
 
